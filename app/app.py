@@ -111,7 +111,7 @@ def create_alert(current_user):
 def home():
     client_ip = get_client_ip()
     logger.info(f'GET / - Home - IP: {client_ip}')
-    return jsonify({"title": "Lailton Api challenge"})
+    return jsonify({"title": "Api challenge - Lailton Montenegro"})
 
 
 if __name__ == '__main__':
