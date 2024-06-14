@@ -1,0 +1,4 @@
+.dockerignore
+*.log
+*.db
+__pycache__
