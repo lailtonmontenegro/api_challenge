@@ -86,7 +86,7 @@ POST - http://localhost:8080/auth/login
 
 ```shell
 curl -X POST 'http://localhost:8080/auth/login' \
-  -u alice:password1 \
+  -u lailton:password1 \
   -H "Content-Type: application/json"
 ```
 O retorno será algo como:
@@ -212,7 +212,8 @@ Respostas esperadas
 Arquivo localicado no caminho `api_challenge/logs/app.log` 
 * Não é possível importar o mesmo IOC se o source for o mesmo.
 * É possível implementar vários Ioc_Type para o mesmo alerta, conforme exemplo abaixo.
-```json
+
+```shell
 curl -H "Authorization: Bearer $your_token" -X POST http://localhost:8080/alert \
   -H "Content-Type: application/json" \
   -d '{
@@ -226,10 +227,9 @@ curl -H "Authorization: Bearer $your_token" -X POST http://localhost:8080/alert 
     ],
     "date": "2024-06-12 12:00:00"
 }'
-
 ```
 
-### Dúvidas, só mandar um ping. 
+. 
 
 Lailton Montenegro 
 
