@@ -13,10 +13,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copiar o código da aplicação
 COPY app/ .
 
-# Definir a variável de ambiente para a chave secreta
-# Como estamos em um ambiente de poc, vou gerar uma chave aleatorio sempre que buildar o contêiner
-RUN python -c "import os; print(f'SECRET_KEY={os.urandom(24).hex()}')" > .env
-
 # Expor a porta da aplicação
 EXPOSE 8080
 

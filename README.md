@@ -31,6 +31,12 @@ cd api_challenge
 ```
 
 ### Construção e Execução com Docker
+
+Crie um arquivo .env para definir a chave secreta:
+```shell
+SECRET_KEY=$(python -c 'import os; print(os.urandom(24).hex())')
+```
+
 ###### Obs: Lembre-se de executar o Docker com um usuário que tenha as permissões adequadas. 
 ```shell
 docker-compose build
