@@ -101,7 +101,7 @@ O retorno será algo como:
 ```shell
 curl -H "Authorization: Bearer your_token" -X GET "http://localhost:8080/alert/10"
 ```
-
+Obs: Para facilitar a análise do desafio, o projeto foi enviado com uma base de dados que já contém 10 alertas. Dessa forma, já é possível realizar buscas na API com o usuário criado 
 
 ## Documentação da API
 Esta api conta com 5 endpoins, abaixo maiores detalhes sobre cada um deles.
