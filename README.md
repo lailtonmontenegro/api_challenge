@@ -34,7 +34,7 @@ cd api_challenge
 
 Crie um arquivo .env para definir a chave secreta:
 ```shell
-SECRET_KEY=$(python -c 'import os; print(os.urandom(24).hex())')
+SECRET_KEY=$(python3 -c 'import os; print(os.urandom(24).hex())')
 ```
 
 ###### Obs: Lembre-se de executar o Docker com um usuário que tenha as permissões adequadas. 
@@ -102,6 +102,7 @@ O retorno será algo como:
 curl -H "Authorization: Bearer your_token" -X GET "http://localhost:8080/alert/10"
 ```
 
+
 ## Documentação da API
 Esta api conta com 5 endpoins, abaixo maiores detalhes sobre cada um deles.
 * /auth/registrer
@@ -153,7 +154,7 @@ Respostas esperadas
 ```
 
 
-### Listar Alertas [ GET /alerts ]
+## Listar Alertas [ GET /alerts ]
 ```shell
 curl -H "Authorization: Bearer your_token" -X GET "http://localhost:8080/alerts"
 ```
@@ -194,7 +195,7 @@ Respostas esperadas
 ```
 
 
-### Buscar por um alerta específico. 
+## Buscar por um alerta específico. [ GET /alert ]
 
 ```shell
 curl -H "Authorization: Bearer $token" -X GET "http://localhost:8080/alert/26"
