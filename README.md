@@ -1,8 +1,16 @@
-# API Challenge
+# Security Guardian API
 
 ## Descrição
 
-Este projeto é parte de um desafio para criar uma API que permite receber e gerenciar alertas de segurança, incluindo a criação, listagem e visualização detalhada de alertas. A API utiliza autenticação JWT para proteger seus endpoints.
+A Security Guardian API é uma API projetada para gerenciar alertas de segurança de forma prática. Este projeto, originalmente criado como parte de um desafio, evoluiu para uma ferramenta que permite:
+
+- Criação de alertas de segurança: Registre novos alertas com informações detalhadas.
+- Listagem de alertas: Acompanhe todos os alertas registrados de forma organizada.
+- Detalhamento de alertas: Consulte informações específicas de cada alerta.
+
+A API utiliza autenticação JWT (JSON Web Token) para proteger seus endpoints e garantir que apenas usuários autorizados possam interagir com os dados.
+
+O Security Guardian API foi desenvolvido para integrar facilmente a gestão de alertas de segurança aos fluxos e sistemas existentes.
 
 
 ## Estrutura do Projeto
